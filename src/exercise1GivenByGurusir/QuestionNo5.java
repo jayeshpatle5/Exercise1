@@ -34,6 +34,8 @@ public class QuestionNo5 {
 
 		System.out.println("Before sorting Array : " + Arrays.toString(arr));
 		List<Integer> list=Arrays.stream(arr).boxed().collect(Collectors.toList());
+		
+		//List<Integer> list=Arrays.stream(arr).boxed().toList();
 		//	List<Integer> list = Ints.asList(arr);
 		Collections.sort(list);
 
