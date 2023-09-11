@@ -59,14 +59,14 @@ public class QustionNo1 {
         Set<String> generateNames=new HashSet<>();
         
         Random rd=new Random();
-        int generatedNo=40;
+        int generatedNo=20;
         
         for(int i=0;i<generatedNo;i++)
         {
             String fName=firstNames[rd.nextInt(firstNames.length)];//firstNames[4]
             String lName=lastNames[rd.nextInt(lastNames.length)];//
             String fullName=fName+" "+lName;
-            System.out.println(fullName);
+            //System.out.println(fullName);
             if(generateNames.contains(fullName))
             {
                 System.out.println("Duplicates :"+fullName);

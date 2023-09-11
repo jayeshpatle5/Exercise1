@@ -11,7 +11,7 @@ public class QuestionNo20 {
 		//				a.	[1,3,6,8,9] target= 3 return the index of 3 
 		//				b.	target = 7 return the index if target will be inserted in the array (sorted)
 
-		int[] arr= {1,3,6,8,9};
+		int[] arr= {3,6,8,9};
 
 		int target=7;
 
@@ -22,7 +22,7 @@ public class QuestionNo20 {
 
 		for(int i=0;i<arr.length;i++) {
 
-			if(arr[i]==target || arr[i]>target) {
+			if(arr[i]>=target) {
 
 				return i;
 			}
@@ -30,6 +30,7 @@ public class QuestionNo20 {
 		return arr.length;
 	}
 
+	
 	public static int getIndexOfTargetvalue2(int[] arr, int target) {
 
 		List<Integer> list=new ArrayList<>();
@@ -40,9 +41,13 @@ public class QuestionNo20 {
 
 
 		if(list.contains(target)) {
-			return list.indexOf(target);
+			
+		return list.indexOf(target);
+		
 		}else if(!list.contains(target)){
+			
 			Collections.sort(list);
+			
 			if(target>list.get(list.size()-1)) {
 				return list.size();
 			}else  {
