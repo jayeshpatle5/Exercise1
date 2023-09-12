@@ -21,10 +21,10 @@ public class QustionNo12 {
 		
 	for(Entry<String,Integer> entry:map.entrySet())
 	{
-		if(entry.getValue()>=1)
-		{
+		if(entry.getValue()>1) {
 		System.out.println(entry.getKey()+"-"+entry.getValue());
 		}
+		
 	}
 	}
 	
