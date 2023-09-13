@@ -6,7 +6,7 @@ public class QustionNo16 {
 
 		//		16.	Find the first non-repeating character in a string by 
 		//		iterating only once through the string with best space and time complexity
-		String str="aabbcc";
+		String str="aabcc";
 		System.out.println(firstnonRepeatingChar2(str));
 
 	}

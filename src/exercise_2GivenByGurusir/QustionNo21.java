@@ -8,7 +8,7 @@ public class QustionNo21 {
 //		(Both in a single line as well as without inbuilt functions)
 		
 		String str1="aabced";
-		String substring="aabd";
+		String substring="aabc";
 		System.out.println(isSubString1(str1, substring));
 		
 	}

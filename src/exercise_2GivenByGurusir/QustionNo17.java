@@ -2,7 +2,10 @@ package exercise_2GivenByGurusir;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class QustionNo17 {
 
@@ -13,7 +16,8 @@ public class QustionNo17 {
 
 		
 		String str="Book key table key smart book key on the table science book";
-		System.out.println(noofRepeatedwordsinSentence(str));
+		String [] stringarr=str.split(" ");
+	System.out.println(noofRepeatedwordsinSentence(str));
 
 	}
 
@@ -38,6 +42,22 @@ public class QustionNo17 {
 		
 		return count;
 
+	}
+	
+	public static void CountWordsUsingHashMap(String[] colors)
+	{
+		Map<String,Integer> map=new HashMap<>();
+		for (int i = 0; i < colors.length; i++) {	
+			map.put(colors[i], map.getOrDefault(colors[i], 0)+1);
+		}
+		
+	for(Entry<String,Integer> entry:map.entrySet())
+	{
+		if(entry.getValue()>1) {
+		System.out.println(entry.getKey()+"-"+entry.getValue());
+		}
+		
+	}
 	}
 	
 }

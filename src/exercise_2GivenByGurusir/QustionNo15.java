@@ -24,14 +24,11 @@ public class QustionNo15 {
 			}
 		}
 	}
+
 	public static boolean ispalinDrome(String str) {
-
-
-		if(new StringBuffer(str).reverse().toString().equals(str)) {
-			return true;
-		}
-		return false;
-
+	
+			return new StringBuffer(str).reverse().toString().equals(str);
+		
 	}
 
 	public static String countoffirstchar(String str) {
@@ -48,6 +45,19 @@ public class QustionNo15 {
 		return str.charAt(0)+"="+count;
 	}
 
+	public static String countoffirstchar1(String str) {
+
+		char c=str.charAt(0);
+		int count=0;
+
+		for(int i=0;i<str.length();i++) {
+			if(str.charAt(i)==c) {
+				count++;
+			}
+		}
+		//	return "count of first character "+str.charAt(0)+" in string is "+ count;
+		return c+"="+count;
+	}
 	public static String highestcountcharInString(String str) {
 
 		int highestcount=0;
@@ -69,36 +79,37 @@ public class QustionNo15 {
 		return ch+"= "+highestcount;
 	}
 
-	public static void checkCharacterCountInPalindrome1(String s)
-	{
-		String[] splittedWords=s.split(" ");
-		System.out.println(splittedWords.toString());
-		for(String eachWord:splittedWords)
-		{
-			if(isPalindrome1(eachWord))
-			{
-				System.out.println(eachWord+" is a palindrome");
-				int count=1;
-				for (int i = 1; i <eachWord.length(); i++) {
-					{
-						
-						if(eachWord.charAt(i)==eachWord.charAt(0))
-						{
-							count++;
-							
-						}					
-					}
-					System.out.println("First repeating char count in "+eachWord +" is "+ eachWord.charAt(i) +"for "+count+ "times");
-				}
-			}
-			else
-			{
-
-			}
-		}
-		
-
-	}
+	
+	//	public static void checkCharacterCountInPalindrome1(String s)
+	//	{
+	//		String[] splittedWords=s.split(" ");
+	//		System.out.println(splittedWords.toString());
+	//		for(String eachWord:splittedWords)
+	//		{
+	//			if(isPalindrome1(eachWord))
+	//			{
+	//				System.out.println(eachWord+" is a palindrome");
+	//				int count=1;
+	//				for (int i = 1; i <eachWord.length(); i++) {
+	//					{
+	//						
+	//						if(eachWord.charAt(i)==eachWord.charAt(0))
+	//						{
+	//							count++;
+	//							
+	//						}					
+	//					}
+	//					System.out.println("First repeating char count in "+eachWord +" is "+ eachWord.charAt(i) +"for "+count+ "times");
+	//				}
+	//			}
+	//			else
+	//			{
+	//
+	//			}
+	//		}
+	//		
+	//
+	//	}
 
 	public static boolean isPalindrome1(String s)
 	{

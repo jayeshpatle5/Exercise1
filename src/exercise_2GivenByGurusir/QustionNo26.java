@@ -7,13 +7,14 @@ public class QustionNo26 {
 		//				if the above string contains duplicates characters return true else return false
 		//				Write 3 approaches and each time reduce the number of iterations
 
-		String s1 = "cde";
+		String s1 = "cdee";
 		System.out.println(containsduplicates1(s1));
 	}
 
 	public static boolean containsduplicates1(String str) {
 
 		for(int i=0;i<str.length();i++) {
+			
 			int a= str.indexOf(str.charAt(i));
 			int b=str.lastIndexOf(str.charAt(i));
 			if(a!=b) {

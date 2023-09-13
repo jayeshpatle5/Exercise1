@@ -12,7 +12,7 @@ public class QustionNo18 {
 
 		int[] arr= {1,2,3,8,5,4,2,5,9,7,};
 
-		float no=5.0f;
+		float no=2.5f;
 		System.out.println(Arrays.toString(uniqueElementsInarr(arr, no)));
 	}
 	

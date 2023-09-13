@@ -8,7 +8,7 @@ public class QustionNo24 {
 
 		String sentence="Book key table key smart book key on the table science book";
 		
-		
+		duplicateswordswithoutusingcollections(sentence);
 	}
 
 	public static void duplicateswordswithoutusingcollections(String str) {
