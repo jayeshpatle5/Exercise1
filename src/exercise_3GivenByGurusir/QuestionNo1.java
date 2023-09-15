@@ -8,8 +8,9 @@ public class QuestionNo1 {
 		//				{abc)//false
 		//				(ABC}//false
 		//				()//true
-		String input= "(abc)";
-		String bracket="()";
+		String input= "({(an)})";
+
+		String bracket="({[]})";
 		System.out.println(matchingClose2(input,bracket));
 
 	}
@@ -22,7 +23,6 @@ public class QuestionNo1 {
 		return (first==bracket.charAt(0) && last==bracket.charAt(1));
 
 
-
 	}
 
 	public static boolean matchingClose2(String str,String bracket) {
@@ -32,10 +32,36 @@ public class QuestionNo1 {
 		for(int i=0;i<str.length();i++) {
 			if(Character.isAlphabetic(str.charAt(i)) || Character.isDigit(str.charAt(i))) {
 				continue;
-			}else if(str.charAt(i)==bracket.charAt(0)){
+			}
+			if(str.charAt(i)==bracket.charAt(0)){
 				count++;
-			}else if(str.charAt(i)==bracket.charAt(1)) {
+			}else if(str.charAt(i)==bracket.charAt(3)) {
 				count--;
+				
+			}else {
+				continue;
+			}
+
+			if(str.charAt(i)==bracket.charAt(1)) {
+				count++;
+			}else if(str.charAt(i)==bracket.charAt(4)) {
+				count--;
+				
+			}
+			else {
+
+				continue;
+			}
+
+			if(str.charAt(i)==bracket.charAt(2)) {
+				count++;
+			}else if(str.charAt(i)==bracket.charAt(5)) {
+				count--;
+				
+			}
+			else {
+
+				continue;
 			}
 		}
 
