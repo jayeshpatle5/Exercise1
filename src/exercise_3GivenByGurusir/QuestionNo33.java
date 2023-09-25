@@ -25,7 +25,7 @@ public class QuestionNo33 {
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		
 	WebElement username=	driver.findElement(By.name("username"));
-	//username.sendKeys("admin");
+	username.sendKeys("admin");
 	
 	String value=username.getAttribute("value");
 	

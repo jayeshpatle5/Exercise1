@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-25T15:40:22 IST" name="Default suite" finished-at="2023-09-25T15:40:22 IST" duration-ms="459">
+    <groups>
+    </groups>
+    <test started-at="2023-09-25T15:40:22 IST" name="Default test" finished-at="2023-09-25T15:40:22 IST" duration-ms="459">
+      <class name="exercise_3GivenByGurusir.QuestionNo32">
+        <test-method signature="getData([Ljava.lang.String;)[pri:0, instance:exercise_3GivenByGurusir.QuestionNo32@4f80542f]" started-at="2023-09-25T15:40:22 IST" name="getData" data-provider="data" finished-at="2023-09-25T15:40:22 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4bf3798b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method signature="getData([Ljava.lang.String;)[pri:0, instance:exercise_3GivenByGurusir.QuestionNo32@4f80542f]" started-at="2023-09-25T15:40:22 IST" name="getData" data-provider="data" finished-at="2023-09-25T15:40:22 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@74e47444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method signature="getData([Ljava.lang.String;)[pri:0, instance:exercise_3GivenByGurusir.QuestionNo32@4f80542f]" started-at="2023-09-25T15:40:22 IST" name="getData" data-provider="data" finished-at="2023-09-25T15:40:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@58670130]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+      </class> <!-- exercise_3GivenByGurusir.QuestionNo32 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

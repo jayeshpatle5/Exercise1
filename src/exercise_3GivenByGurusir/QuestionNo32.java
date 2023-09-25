@@ -13,6 +13,9 @@ import org.testng.annotations.Test;
 
 
 public class QuestionNo32 {
+	
+	
+
 
 	String uname = "";
 	String password = "1234";
@@ -20,12 +23,12 @@ public class QuestionNo32 {
 	String port = "";
 
 	public static List<List<String>> dataFromDatabase(String query, String port, String host, String password,
-			String table, String[] col) {
+			String database, String[] col) {
 		List<List<String>> st = new ArrayList<>();
 		try {
-
+			
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/" + table, "root",
+			Connection con = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/" + database, "root",
 					password);
 
 			ResultSet rs = null;
@@ -56,7 +59,7 @@ public class QuestionNo32 {
 	@Test(dataProvider = "data")
 	public void getData(String[] name) {
 		for (int i = 0; i < name.length; i++) {
-			System.out.print(name[1] + " ");
+			System.out.print(name[i] + " ");
 		}
 		System.out.println();
 	}
@@ -64,7 +67,7 @@ public class QuestionNo32 {
 	@DataProvider(name = "data")
 	public String[][] dataProvider() {
 
-		List<List<String>> list = dataFromDatabase("select * from Student", "3306", "localhost", "1234", "student",
+		List<List<String>> list = dataFromDatabase("select * from student", "3306", "localhost", "1234", "student",
 				new String[] { "SNO", "FNAME", "MARKS" });
 		String[][] arr = new String[list.size()][];
 
